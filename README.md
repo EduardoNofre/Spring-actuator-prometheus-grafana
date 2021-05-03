@@ -373,4 +373,21 @@ tomcat_sessions_alive_max_seconds 0.0
 jvm_gc_live_data_size_bytes 2.9758536E7
 ````
 
+# Configurando
+O primeiro passo é fazer a configuração do arquivo prometheus.yml, que pode ser criado dentro do projeto:
 
+````
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+scrape_configs:
+  - job_name: 'prometheusJob'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090'] #Servidor prometheus
+  - job_name: 'spring-monitoring-demo'
+    scrape_interval: 5s
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['localhost:8087'] #Servidor da minha aplicação
+ ````
