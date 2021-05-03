@@ -25,4 +25,99 @@ No Maven:
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ````
+Para testar é bem simples apos colocar a dependencia no maven é chamar o endpoint.
 
+sem contexto:
+http://localhost:7009/actuator/env
+
+Caso tenha contexto a sua aplicação:
+http://localhost:7009/api-monitor-prometheus/actuator/env
+
+Caso tenha dado certo o resultado do seu endpoint será parecido com este abaixo:
+
+````
+{
+    "_links": {
+        "self": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator",
+            "templated": false
+        },
+        "beans": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/beans",
+            "templated": false
+        },
+        "caches-cache": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/caches/{cache}",
+            "templated": true
+        },
+        "caches": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/caches",
+            "templated": false
+        },
+        "health": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/health",
+            "templated": false
+        },
+        "health-path": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/health/{*path}",
+            "templated": true
+        },
+        "info": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/info",
+            "templated": false
+        },
+        "conditions": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/conditions",
+            "templated": false
+        },
+        "configprops": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/configprops",
+            "templated": false
+        },
+        "env": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/env",
+            "templated": false
+        },
+        "env-toMatch": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/env/{toMatch}",
+            "templated": true
+        },
+        "loggers": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/loggers",
+            "templated": false
+        },
+        "loggers-name": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/loggers/{name}",
+            "templated": true
+        },
+        "heapdump": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/heapdump",
+            "templated": false
+        },
+        "threaddump": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/threaddump",
+            "templated": false
+        },
+        "prometheus": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/prometheus",
+            "templated": false
+        },
+        "scheduledtasks": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/scheduledtasks",
+            "templated": false
+        },
+        "mappings": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/mappings",
+            "templated": false
+        },
+        "refresh": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/refresh",
+            "templated": false
+        },
+        "features": {
+            "href": "http://localhost:7009/api-monitor-prometheus/actuator/features",
+            "templated": false
+        }
+    }
+}
+````
