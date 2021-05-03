@@ -177,7 +177,8 @@ http://localhost:7009/actuator/shutdown - Executa um desligamento normal do apli
 http://localhost:7009/actuator/threaddump - Despeja as informações de encadeamento da JVM subjacente
 
 
+## Prometheus ... to do
 
-
+## Grafana ... to do
 
 
