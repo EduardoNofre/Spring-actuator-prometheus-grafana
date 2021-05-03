@@ -17,3 +17,11 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 é um aplicativo de software gratuito usado para monitoramento e alerta de eventos. Ele registra métricas em tempo real em um banco de dados de série temporal (permitindo alta dimensionalidade) construído usando um modelo de pull HTTP, com consultas flexíveis e alertas em tempo real.
 
 ## Utilizando o Actuator.
+Para habilitar o Spring Boot Actuator, só precisamos adicionar a dependência spring-boot-atuator ao nosso gerenciador de pacotes.
+No Maven:
+....
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+....
