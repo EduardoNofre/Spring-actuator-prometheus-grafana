@@ -169,14 +169,6 @@ http://localhost:7009/actuator/shutdown - Executa um desligamento normal do apli
 
 http://localhost:7009/actuator/threaddump - Despeja as informações de encadeamento da JVM subjacente
 
-
-## Grafana ... to do
-
-# O que é Grafana?
-Grafana é uma solução de código aberto para executar análises de dados, obtendo métricas que dão sentido à enorme quantidade de dados e para monitorar nossos aplicativos com a ajuda de painéis personalizáveis.
-
-
-## Prometheus ... to do
 # O que é Prometheus?
 é um aplicativo de software gratuito usado para monitoramento e alerta de eventos. Ele registra métricas em tempo real em um banco de dados de série temporal (permitindo alta dimensionalidade) construído usando um modelo de pull HTTP, com consultas flexíveis e alertas em tempo real.
 
@@ -399,3 +391,9 @@ Devemos fazer o download do prometheus e por fim, iniciar o serviço com o segui
 ### prometheus.exe –config.file =<PATH_DO_ARQUIVO>/prometheus.yml
 Lembrando que aqui poderíamos facilmente utilizar o docker para baixar a imagem e rodar o prometheus.
 Para ver a pagina principal do Prometheus execute a url localhost:9090 conforme configuração do arquivo prometheus.yml:
+
+
+## Grafana ... to do
+
+# O que é Grafana?
+Grafana é uma solução de código aberto para executar análises de dados, obtendo métricas que dão sentido à enorme quantidade de dados e para monitorar nossos aplicativos com a ajuda de painéis personalizáveis.
