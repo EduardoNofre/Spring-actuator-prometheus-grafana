@@ -148,17 +148,17 @@ http://localhost:7009/actuator/logfile - Retorna logs de aplicativo comuns.
 
 http://localhost:7009/actuator/loggers - Nos permite consultar e modificar o nível de registro de nosso aplicativo.
 
-http://localhost:7009/actuator/metrics - 
+http://localhost:7009/actuator/metrics - Detalha as métricas de nosso aplicativo. Isso pode incluir métricas genéricas e personalizadas.
 
-http://localhost:7009/actuator/prometheus - 
+http://localhost:7009/actuator/prometheus - Retorna métricas como o anterior, mas formatado para funcionar com um servidor Prometheus.
 
-http://localhost:7009/actuator/scheduledtasks - 
+http://localhost:7009/actuator/scheduledtasks - Fornece detalhes sobre cada tarefa schedulada em nosso aplicativo.
 
-http://localhost:7009/actuator/sessions - 
+http://localhost:7009/actuator/sessions - Lista as sessões HTTP, uma vez que estamos usando Spring Session.
 
-http://localhost:7009/actuator/shutdown - 
+http://localhost:7009/actuator/shutdown - Executa um desligamento normal do aplicativo.
 
-http://localhost:7009/actuator/threaddump - 
+http://localhost:7009/actuator/threaddump - Despeja as informações de encadeamento da JVM subjacente
 
 
 
