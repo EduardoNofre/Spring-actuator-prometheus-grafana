@@ -373,7 +373,7 @@ tomcat_sessions_alive_max_seconds 0.0
 jvm_gc_live_data_size_bytes 2.9758536E7
 ````
 
-# Configurando
+# Configurando criando o arquivo prometheus.yml
 O primeiro passo é fazer a configuração do arquivo prometheus.yml, que pode ser criado dentro do projeto:
 
 ````
