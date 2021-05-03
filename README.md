@@ -399,7 +399,8 @@ Para ver a pagina principal do Prometheus execute a url localhost:9090 conforme 
 Grafana é uma solução de código aberto para executar análises de dados, obtendo métricas que dão sentido à enorme quantidade de dados e para monitorar nossos aplicativos com a ajuda de painéis personalizáveis.
 
 # Fazendo o download e acessando o Grafana
-* O download pode ser feito através deste link
-Executar o grafana-server.exe
-Acessar a url http://localhost:3000
-Utilizar o login e senha padrão: admin e admin
+
+* O download pode ser feito através deste link: https://grafana.com/grafana/download
+* Executar o grafana-server.exe
+* Acessar a url http://localhost:3000
+* Utilizar o login e senha padrão: admin e admin
