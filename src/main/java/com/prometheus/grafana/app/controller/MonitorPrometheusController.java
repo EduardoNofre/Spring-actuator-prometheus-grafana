@@ -86,8 +86,8 @@ public class MonitorPrometheusController {
 			+ " <br />responseCode = 404, Não encontrado."
 			+ " <br />responseCode = 500, Erro interno sem causa mapeada."
 			+ " <br />responseCode = 504, Gateway Time-Out.") })
-	@Operation(summary = "Busca por id", description = "Busca empresa por id no banco de dados", tags = {"Atualizar"})
-	@PutMapping(value = "inserir/nome{ nome}/idade{ idade}/ endereco{endereco}/enderecoComplemento{enderecoComplemento}/numeroResidencial{numeroResidencial}/numeroApartamento{numeroApartamento}")
+	@Operation(summary = "cadastrar", description = "cadastrar no banco de dados", tags = {"cadastrar"})
+	@PutMapping(value = "cadastrar/nome{nome}/idade{idade}/ endereco{endereco}/enderecoComplemento{enderecoComplemento}/numeroResidencial{numeroResidencial}/numeroApartamento{numeroApartamento}")
 	public ResponseEntity<GrafanaPrometheus>  atualizar(
 					@Parameter(description = "Nome.", required = true) @PathVariable String nome,
 					@Parameter(description = "Idade.", required = true) @PathVariable Integer idade,

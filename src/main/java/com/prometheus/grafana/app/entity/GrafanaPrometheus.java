@@ -8,6 +8,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;
@@ -27,6 +31,9 @@ public class GrafanaPrometheus {
 	
 	@Schema(description = "Nome.", example = "abc", required = true)
 	@Size(max = 50)
+	@NotNull(message = "O campo nome não pode está nulo.")
+	@NotBlank(message = "O campo nome não pode esta em  branco.")
+	@NotEmpty(message = "O campo nome não pode está vazio.")
 	@Column(name="nome", length = 50)
 	private String  nome;
 	
