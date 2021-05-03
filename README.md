@@ -15,3 +15,5 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 # O que é Prometheus?
 
 é um aplicativo de software gratuito usado para monitoramento e alerta de eventos. Ele registra métricas em tempo real em um banco de dados de série temporal (permitindo alta dimensionalidade) construído usando um modelo de pull HTTP, com consultas flexíveis e alertas em tempo real.
+
+## Utilizando o Actuator.
