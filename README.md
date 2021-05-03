@@ -28,10 +28,10 @@ No Maven:
 Para testar é bem simples apos colocar a dependencia no maven é chamar o endpoint.
 
 sem contexto:
-http://localhost:7009/actuator/env
+http://localhost:7009/actuator/
 
 Caso tenha contexto a sua aplicação:
-http://localhost:7009/api-monitor-prometheus/actuator/env
+http://localhost:7009/api-monitor-prometheus/actuator/
 
 Caso tenha dado certo o resultado do seu endpoint será parecido com este abaixo:
 
@@ -121,3 +121,47 @@ Caso tenha dado certo o resultado do seu endpoint será parecido com este abaixo
     }
 }
 ````
+
+## alguns endpoints foram adicionados, alguns removidos e alguns foram reestruturados:
+
+http://localhost:7009/actuator/auditevents - lista eventos relacionados à auditoria de segurança, como login / logout do usuário. Além disso, podemos filtrar por principal ou tipo entre outros campos.
+
+http://localhost:7009/actuator/beans - Retorna todos os beans disponíveis em nossa BeanFactory. Ao contrário de / auditevents, ele não oferece suporte à filtragem.
+
+http://localhost:7009/actuator/conditions - Anteriormente conhecido como / autoconfig, cria um relatório das condições em torno da configuração automática.
+
+http://localhost:7009/actuator/configprops - Nos permite buscar todos os beans @ConfigurationProperties.
+
+http://localhost:7009/actuator/env - Retorna as propriedades do ambiente atual. Além disso, podemos recuperar propriedades únicas.
+
+http://localhost:7009/actuator/flyway - fornece detalhes sobre nossas migrações de banco de dados Flyway.
+
+http://localhost:7009/actuator/health - Resume o estado de saúde de nosso aplicativo.
+
+http://localhost:7009/actuator/heapdump - Constrói e retorna um dump de heap da JVM usado por nosso aplicativo.
+
+http://localhost:7009/actuator/info - Retorna informações gerais. Podem ser dados personalizados, informações de construção ou detalhes sobre o último commit.
+
+http://localhost:7009/actuator/liquibase - Se comporta como / flyway, mas para Liquibase.
+
+http://localhost:7009/actuator/logfile - Retorna logs de aplicativo comuns.
+
+http://localhost:7009/actuator/loggers - Nos permite consultar e modificar o nível de registro de nosso aplicativo.
+
+http://localhost:7009/actuator/metrics - 
+
+http://localhost:7009/actuator/prometheus - 
+
+http://localhost:7009/actuator/scheduledtasks - 
+
+http://localhost:7009/actuator/sessions - 
+
+http://localhost:7009/actuator/shutdown - 
+
+http://localhost:7009/actuator/threaddump - 
+
+
+
+
+
+
