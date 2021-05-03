@@ -25,6 +25,22 @@ No Maven:
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 ````
+
+No seu arquivo yml que fica em sua aplicação vamos colocar essas propriedades.
+````
+##-----------------------------------------------------------
+## Configuração - Spring Boot Actuator
+##-----------------------------------------------------------
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # exibir todos os endpoints
+  endpoint:
+    health:
+      show-details: always # Você pode usar as informações de health para verificar o status do aplicativo em execução. 
+````
+
 Para testar é bem simples apos colocar a dependencia no maven é chamar o endpoint.
 
 sem contexto:
