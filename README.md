@@ -404,3 +404,9 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 * Executar o grafana-server.exe
 * Acessar a url http://localhost:3000
 * Utilizar o login e senha padrão: admin e admin
+
+# Adicionando o datasource do prometheus no Grafana
+* Clicar no ícone de engrenagem do lado esquerdo e selecionar a opção “data sources”
+* Clicar em “add data source”
+* Escolher “Prometheus”
+
