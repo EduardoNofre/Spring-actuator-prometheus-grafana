@@ -11,3 +11,7 @@ Actuator é usado principalmente para expor informações operacionais sobre o a
 
 # O que é um Grafana?
 Grafana é uma solução de código aberto para executar análises de dados, obtendo métricas que dão sentido à enorme quantidade de dados e para monitorar nossos aplicativos com a ajuda de painéis personalizáveis.
+
+# Prometheus 
+
+é um aplicativo de software gratuito usado para monitoramento e alerta de eventos. Ele registra métricas em tempo real em um banco de dados de série temporal (permitindo alta dimensionalidade) construído usando um modelo de pull HTTP, com consultas flexíveis e alertas em tempo real.
