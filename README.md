@@ -19,9 +19,10 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 ## Utilizando o Actuator.
 Para habilitar o Spring Boot Actuator, só precisamos adicionar a dependência spring-boot-atuator ao nosso gerenciador de pacotes.
 No Maven:
-.....
+````
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
-.....
+````
+
