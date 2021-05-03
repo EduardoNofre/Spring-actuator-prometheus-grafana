@@ -385,7 +385,7 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['localhost:9090'] #Servidor prometheus
-  - job_name: 'spring-monitoring-demo'
+  - job_name: 'spring-monitoring-demo' # pode ser o nome do projeto
     scrape_interval: 5s
     metrics_path: '/actuator/prometheus'
     static_configs:
