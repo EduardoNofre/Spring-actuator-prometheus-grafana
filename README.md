@@ -388,7 +388,7 @@ Para saber mais procure no site do Prometheus a documentação.
 # Executando no ambiente windows.
 
 Devemos fazer o download do prometheus e por fim, iniciar o serviço com o seguinte comando:
-### prometheus.exe –config.file =<PATH_DO_ARQUIVO>/prometheus.yml
+### prometheus.exe –config.file =<caminho do seu arquivo yml>/prometheus.yml
 Lembrando que aqui poderíamos facilmente utilizar o docker para baixar a imagem e rodar o prometheus.
 Para ver a pagina principal do Prometheus execute a url localhost:9090 conforme configuração do arquivo prometheus.yml:
 
@@ -397,3 +397,9 @@ Para ver a pagina principal do Prometheus execute a url localhost:9090 conforme 
 
 # O que é Grafana?
 Grafana é uma solução de código aberto para executar análises de dados, obtendo métricas que dão sentido à enorme quantidade de dados e para monitorar nossos aplicativos com a ajuda de painéis personalizáveis.
+
+# Fazendo o download e acessando o Grafana
+* O download pode ser feito através deste link
+Executar o grafana-server.exe
+Acessar a url http://localhost:3000
+Utilizar o login e senha padrão: admin e admin
