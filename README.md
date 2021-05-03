@@ -392,3 +392,10 @@ scrape_configs:
       - targets: ['localhost:8087'] #Servidor da minha aplicação
  ````
 Para saber mais procure no site do Prometheus a documentação.
+
+# Executando no ambiente windows.
+
+Devemos fazer o download do prometheus e por fim, iniciar o serviço com o seguinte comando:
+### prometheus.exe –config.file =<PATH_DO_ARQUIVO>/prometheus.yml
+Lembrando que aqui poderíamos facilmente utilizar o docker para baixar a imagem e rodar o prometheus.
+Na imagem abaixo já pode-se ver o serviço do prometheus em funcionamento conforme configuração do arquivo prometheus.yml:
