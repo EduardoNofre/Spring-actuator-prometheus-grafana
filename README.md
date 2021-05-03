@@ -391,3 +391,4 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:8087'] #Servidor da minha aplicação
  ````
+Para saber mais procure no site do Prometheus a documentação.
