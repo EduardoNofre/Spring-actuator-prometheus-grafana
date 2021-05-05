@@ -388,7 +388,7 @@ Para saber mais procure no site do Prometheus a documentação.
 # Executando no ambiente windows.
 
 Devemos fazer o download do prometheus e por fim, iniciar o serviço com o seguinte comando:
-### prometheus.exe –config.file =<caminho do seu arquivo yml>/prometheus.yml
+### prometheus.exe --config.file =<caminho do seu arquivo yml>/prometheus.yml
 Lembrando que aqui poderíamos facilmente utilizar o docker para baixar a imagem e rodar o prometheus.
 Para ver a pagina principal do Prometheus execute a url localhost:9090 conforme configuração do arquivo prometheus.yml:
 
