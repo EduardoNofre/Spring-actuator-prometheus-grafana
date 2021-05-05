@@ -1,5 +1,10 @@
 # java-spring-boot-actuator-prometheus-grafana
 java spring boot actuator prometheus grafana exemplo basico.
+### versões:
+* Java 8
+* Prometheus 2.26.0 windows 64
+* Grafana 7.5.5
+* Spring boot 2.4.5
 
 
 # O que é Actuator?
