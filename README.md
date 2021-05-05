@@ -433,11 +433,12 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 # Importando dashboards existentes no proprio site do grafana
 
 Aqui vai alguns ids que eu utilizei durante os testes:
-* id = 
-* id = 
-* id = 
-* id = 
-* id = 
+* id = 12856 nome = 1 SLS JVM监控大盘
+* id = 4701  nome = JVM (Micrometer)
+* id = 3662  nome = Prometheus 2.0 Overview
+* id = 10280 nome = Spring Boot 2.1 Statistics
+* id = 6083  nome = Spring Boot HikariCP / JDBC
+* id = 9933  nome = SSpring Cloud Data Flow (SCDF) Streams Prometheus
 
 Os ids acima podem ser importado para o grafana.
 Os Ids são numero de dasboard disponiveis no proprio site do grafana la existem varios.
