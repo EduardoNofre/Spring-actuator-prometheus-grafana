@@ -6,6 +6,8 @@ server:
   servlet:
     context-path: /api-monitor-prometheus
 spring:
+  application:
+    name: java-spring-boot-actuator-prometheus-grafana
   h2:
     console:
       enabled: true
@@ -36,10 +38,13 @@ management:
     health:
       show-details: always
     metrics:
-      enabled: false
+      enabled: true
     prometheus:
       enabled: true
   metrics:
     export:
       prometheus:
-        enabled: true   
+        enabled: true  
+    tags:
+      application: ${spring.application.name}
+      region: actuator-prometheus-grafana-my-region 

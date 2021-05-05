@@ -4,13 +4,16 @@
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
+  external_labels:
+        monitor: 'my_monitor'
+
 scrape_configs:
-  - job_name: 'Projeto: java spring boot actuator prometheus grafana'
+  - job_name: 'prometheus'
     scrape_interval: 5s
     static_configs:
       - targets: ['localhost:9090'] #Servidor prometheus
-  - job_name: 'Projeto: java-spring-boot-actuator-prometheus-grafana' # nome que você quiser, mas indico o nome do seu projeto
+  - job_name: 'java-spring-boot-actuator-prometheus-grafana' # nome que você quiser, mas indico o nome do seu projeto
     scrape_interval: 5s
-    metrics_path: '/actuator/prometheus'
+    metrics_path: '/api-monitor-prometheus/actuator/prometheus'
     static_configs:
       - targets: ['localhost:7009'] #Servidor da minha aplicação  
