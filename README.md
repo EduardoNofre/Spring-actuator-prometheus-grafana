@@ -410,4 +410,39 @@ Grafana é uma solução de código aberto para executar análises de dados, obt
 * Clicar em “add data source”
 * Escolher “Prometheus”
 
+< colocar imagem exemplo > 
+
+* Adicionar um novo Dashboard, e um Novo painel (neste caso escolhi a opção “add query”.
+
+< colocar imagem exemplo > 
+    
+* Após isso escolho o datasource previamente configurado:
+
+< colocar imagem exemplo > 
+
+* Em seguida, é possível montar uma query do prometheus no editor de queries do grafana:
+
+< colocar imagem exemplo > 
+
+* Assim, já é possível analisar métricas através do painel
+
+< colocar imagem exemplo > 
+
+* Lembrando que podemos criar vários tipos de gráficos com diferentes métricas para um monitoramento preciso dos dados.
+
+# Importando dashboards existentes no proprio site do grafana
+
+Aqui vai alguns ids que eu utilizei durante os testes:
+* id = 
+* id = 
+* id = 
+* id = 
+* id = 
+
+Os ids acima podem ser importado para o grafana.
+Os Ids são numero de dasboard disponiveis no proprio site do grafana la existem varios.
+### Observação: ### 
+Ao escolher um dashborad se atente ao escolher um o mais proximo da sua versão do grafana e prometheus no site tem todas essas informações.
+
+
 https://medium.com/projuristech/monitorando-uma-aplica%C3%A7%C3%A3o-spring-boot-2-x-fc939257db8e
